@@ -7,7 +7,7 @@
 An end-to-end data analytics project turning raw customer shopping data into actionable business insights — from data cleaning and SQL querying to an interactive Power BI dashboard.
 
 <!-- 📸 REPLACE THIS with your best dashboard screenshot from the "Power BI Dashboard Screenshots" folder -->
-![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/dashboard_overview.png)
+![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/image1.png)
 
 ## Overview
 
@@ -26,8 +26,8 @@ This project analyzes ~3,900 customer shopping records to uncover revenue trends
 ## Dashboard
 
 <!-- 📸 Add 2-3 more screenshots here showing different views/filters of the dashboard -->
-![KPI View](./Power%20BI%20Dashboard%20Screenshots/kpi_view.png)
-![Trend Analysis](./Power%20BI%20Dashboard%20Screenshots/trend_analysis.png)
+![KPI View](./Power%20BI%20Dashboard%20Screenshots/Image2.png)
+![Trend Analysis](./Power%20BI%20Dashboard%20Screenshots/Image3.png)
 
 The dashboard includes:
 - KPI cards for total revenue, average order value, and customer count
