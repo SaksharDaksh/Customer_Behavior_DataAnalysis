@@ -1,67 +1,72 @@
-# Data Analytics Project: Customer Behavior Analysis
+# Customer Behavior Data Analysis
+
+[![Python](https://img.shields.io/badge/Python-3.10-blue)]()
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)]()
+[![SQL](https://img.shields.io/badge/SQL-Analysis-orange)]()
+
+An end-to-end data analytics project turning raw customer shopping data into actionable business insights — from data cleaning and SQL querying to an interactive Power BI dashboard.
+
+<!-- 📸 REPLACE THIS with your best dashboard screenshot from the "Power BI Dashboard Screenshots" folder -->
+![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/dashboard_overview.png)
 
 ## Overview
-This project demonstrates an end-to-end Data Analytics workflow using Python, SQL, and Power BI. The objective was to extract insights from raw customer shopping data through data cleaning, exploratory data analysis (EDA), SQL-based querying, and interactive dashboard creation.
+
+This project analyzes ~3,900 customer shopping records to uncover revenue trends, product performance, and customer segments. It demonstrates a full analytics workflow: Python for cleaning and EDA, SQL for business-question querying, and Power BI for interactive reporting.
+
+## Key Insights
+
+<!-- ⚠️ Replace these placeholders with your actual numbers from the notebook / SQL results -->
+- Subscribed customers spend **X% more** on average than non-subscribers
+- **[Category name]** generates the highest revenue, contributing **X%** of total sales
+- Customers who used a discount still spent **X% above** the average purchase amount in **X%** of cases
+- **[Age group]** accounts for the largest share of revenue at **X%**
+- Top 3 products by average review rating: **[Product 1], [Product 2], [Product 3]**
+- **X%** of customers fall into the "Loyal" segment based on purchase history, contributing **X%** of total revenue
+
+## Dashboard
+
+<!-- 📸 Add 2-3 more screenshots here showing different views/filters of the dashboard -->
+![KPI View](./Power%20BI%20Dashboard%20Screenshots/kpi_view.png)
+![Trend Analysis](./Power%20BI%20Dashboard%20Screenshots/trend_analysis.png)
+
+The dashboard includes:
+- KPI cards for total revenue, average order value, and customer count
+- Trend analysis charts by month/season
+- Interactive filters and slicers (category, gender, age group, subscription status)
+- Comparative visuals across customer segments
 
 ## Dataset
-The dataset contains structured data on customer shopping behavior, including demographics, purchase details, and shopping preferences.
 
-**Dataset Features**
-- ~3,900 customer records
-- Mix of categorical and numerical columns (age, gender, item purchased, category, purchase amount, location, size, color, season, review rating, subscription status, shipping type, discount usage, previous purchases, payment method, purchase frequency)
-- Missing values and duplicate records requiring cleaning
-- Data suitable for trend analysis and KPI generation
+| | |
+|---|---|
+| **Records** | ~3,900 customer transactions |
+| **Source** | [Kaggle — Customer Shopping Behavior](#) <!-- add actual dataset link --> |
+| **Features** | Demographics, purchase details, item category, purchase amount, location, size, color, season, review rating, subscription status, shipping type, discount usage, previous purchases, payment method, purchase frequency |
 
-**Data Source:** Kaggle
+## Tech Stack
 
-## Tools & Technologies
-
-**Programming & Analysis**
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-
-**Database & Querying**
-- PostgreSQL
-- MySQL
-- Microsoft SQL Server
-
-**Visualization & Reporting**
-- Power BI
-
-**Development Environment**
-- Jupyter Notebook
+| Layer | Tools |
+|---|---|
+| Data Cleaning & EDA | Python, Pandas, NumPy, Matplotlib, Seaborn |
+| Querying | SQL (MySQL / SQL Server / PostgreSQL) |
+| Visualization | Power BI |
+| Environment | Jupyter Notebook |
 
 ## Project Workflow
 
-### 1. Data Loading
-- Imported dataset using Python
-- Checked dataset structure and data types
-- Handled file formats such as CSV
+```
+Raw CSV → Data Cleaning → EDA → SQL Analysis → Power BI Dashboard → Insights & Report
+```
 
-### 2. Exploratory Data Analysis (EDA)
-- Performed statistical analysis
-- Identified trends and patterns
-- Created visualizations for better understanding
-- Analyzed correlations and distributions
+1. **Data Loading** — imported and inspected the raw CSV, checked types and structure
+2. **EDA** — statistical summaries, trend/pattern identification, correlation analysis
+3. **Data Cleaning** — removed duplicates, handled missing values, standardized formats
+4. **SQL Analysis** — answered business questions using filtering, aggregations, `GROUP BY`/`HAVING`, subqueries, and window functions
+5. **Dashboard Development** — built an interactive Power BI report with KPIs, trends, and filters
+6. **Reporting** — summarized insights into business-relevant recommendations
 
-### 3. Data Cleaning
-- Removed duplicate values
-- Handled missing/null values
-- Standardized column names and formats
-- Corrected inconsistent data entries
+## Sample Business Questions Answered (SQL)
 
-### 4. SQL Analysis
-Executed analytical queries using MySQL and SQL Server, including:
-- Filtering and sorting
-- Aggregations
-- GROUP BY and HAVING
-- Subqueries
-- Window functions
-
-Sample business questions answered:
 - What is the total revenue generated by male vs. female customers?
 - Which customers used a discount but still spent more than the average purchase amount?
 - What are the top 5 products with the highest average review rating?
@@ -69,39 +74,36 @@ Sample business questions answered:
 - What are the top 3 most purchased products within each category?
 - What is the revenue contribution of each age group?
 
-### 5. Dashboard Development
-Built an interactive Power BI dashboard featuring:
-- KPI cards
-- Trend analysis charts
-- Filters and slicers
-- Comparative analysis visuals
-- Business insights
-
-### 6. Reporting
-- Prepared a detailed analytical report summarizing insights and recommendations
-
 ## Repository Structure
-```text
+
+```
 Customer_Behavior_DataAnalysis/
 │
-├── customer_shopping_behavior.csv       # Raw dataset
-├── Customer_Behavior.ipynb              # Python EDA & data cleaning notebook
-├── Customer_Behavior_SqlQueries.sql     # SQL analysis queries
-├── Customer Behavior.pbix               # Power BI dashboard
+├── data/
+│   └── customer_shopping_behavior.csv     # Raw dataset
+├── Power BI Dashboard Screenshots/        # Dashboard visuals
+├── Customer_Behavior.ipynb                # Python EDA & cleaning notebook
+├── Customer_Behavior_SqlQueries.sql       # SQL analysis queries
+├── Customer_Behavior.pbix                 # Power BI dashboard file
 └── README.md
 ```
 
-## Key Insights
-- Identified spending differences across gender, age groups, and subscription status
-- Found top-performing products by category and by review rating
-- Segmented customers into New, Returning, and Loyal based on purchase history
-- Surfaced which products have the highest discount usage, informing pricing strategy
-
 ## How to Run
+
 1. Clone the repository
-2. Open `Customer_Behavior.ipynb` in Jupyter Notebook to explore the EDA and data cleaning steps
-3. Run the queries in `Customer_Behavior_SqlQueries.sql` against a MySQL/SQL Server instance loaded with the dataset
-4. Open `Customer Behavior.pbix` in Power BI Desktop to explore the interactive dashboard
+   ```
+   git clone https://github.com/SaksharDaksh/Customer_Behavior_DataAnalysis.git
+   ```
+2. Open `Customer_Behavior.ipynb` in Jupyter Notebook to explore the EDA and cleaning steps
+3. Run `Customer_Behavior_SqlQueries.sql` against a MySQL/SQL Server instance loaded with the dataset
+4. Open `Customer_Behavior.pbix` in Power BI Desktop to explore the interactive dashboard
+
+## Limitations & Future Scope
+
+- Single static snapshot of customer data (no time-series tracking)
+- Limited to one retailer's dataset structure — findings may not generalize
+- Future: publish dashboard via Power BI Service for browser-based viewing, add cohort/RFM analysis, expand to multi-year data
 
 ---
+
 *Data Analytics Project | Python, SQL, Power BI*
