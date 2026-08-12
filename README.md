@@ -4,75 +4,115 @@
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)]()
 [![SQL](https://img.shields.io/badge/SQL-Analysis-orange)]()
 
-An end-to-end data analytics project turning raw customer shopping data into actionable business insights — from data cleaning and SQL querying to an interactive Power BI dashboard.
+An end-to-end data analytics project that transforms raw customer shopping data into actionable business insights using **Python**, **SQL**, and **Power BI**. The project covers the complete analytics workflow, including data cleaning, exploratory data analysis (EDA), SQL-based business analysis, and interactive dashboard creation.
 
-<!-- 📸 REPLACE THIS with your best dashboard screenshot from the "Power BI Dashboard Screenshots" folder -->
-![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/Image1.png)
+---
 
 ## Overview
 
-This project analyzes ~3,900 customer shopping records to uncover revenue trends, product performance, and customer segments. It demonstrates a full analytics workflow: Python for cleaning and EDA, SQL for business-question querying, and Power BI for interactive reporting.
+This project analyzes approximately **3,900 customer shopping records** to understand purchasing behavior, customer demographics, and revenue trends. It demonstrates an end-to-end analytics pipeline—from cleaning raw data and performing exploratory analysis in Python to answering business questions with SQL and building an interactive Power BI dashboard.
+
+---
 
 ## Key Insights
 
-<!-- ⚠️ Replace these placeholders with your actual numbers from the notebook / SQL results -->
-- Subscribed customers spend **X% more** on average than non-subscribers
-- **[Category name]** generates the highest revenue, contributing **X%** of total sales
-- Customers who used a discount still spent **X% above** the average purchase amount in **X%** of cases
-- **[Age group]** accounts for the largest share of revenue at **X%**
-- Top 3 products by average review rating: **[Product 1], [Product 2], [Product 3]**
-- **X%** of customers fall into the "Loyal" segment based on purchase history, contributing **X%** of total revenue
+- Identified customer spending patterns across different age groups and genders.
+- Analyzed the impact of discounts and subscription status on customer purchases.
+- Compared revenue generated across different product categories.
+- Examined seasonal purchasing trends and customer preferences.
+- Built interactive dashboards to visualize KPIs and business metrics.
+- Generated business insights to support data-driven decision-making.
+
+---
 
 ## Dashboard
 
-<!-- 📸 Add 2-3 more screenshots here showing different views/filters of the dashboard -->
-![KPI View](./Power%20BI%20Dashboard%20Screenshots/Image2.png)
-![Trend Analysis](./Power%20BI%20Dashboard%20Screenshots/Image3.png)
+The interactive Power BI dashboard includes:
 
-The dashboard includes:
-- KPI cards for total revenue, average order value, and customer count
-- Trend analysis charts by month/season
-- Interactive filters and slicers (category, gender, age group, subscription status)
-- Comparative visuals across customer segments
+- KPI cards for Total Revenue, Average Purchase Amount, and Customer Count
+- Revenue analysis by product category
+- Seasonal purchasing trends
+- Customer demographic analysis
+- Interactive slicers and filters
+- Subscription and discount analysis
+- Purchase frequency insights
+
+---
 
 ## Dataset
+
+This project uses the **Customer Shopping Behavior** dataset.
 
 | | |
 |---|---|
 | **Records** | ~3,900 customer transactions |
-| **Source** | [Kaggle — Customer Shopping Behavior](#) <!-- add actual dataset link --> |
-| **Features** | Demographics, purchase details, item category, purchase amount, location, size, color, season, review rating, subscription status, shipping type, discount usage, previous purchases, payment method, purchase frequency |
+| **Source** | https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv |
+| **Features** | Customer demographics, purchase amount, purchased item, category, location, size, color, season, review rating, subscription status, shipping type, discount usage, previous purchases, payment method, and purchase frequency |
+
+---
 
 ## Tech Stack
 
 | Layer | Tools |
-|---|---|
+|-------|-------|
 | Data Cleaning & EDA | Python, Pandas, NumPy, Matplotlib, Seaborn |
-| Querying | SQL (MySQL / SQL Server / PostgreSQL) |
-| Visualization | Power BI |
-| Environment | Jupyter Notebook |
+| Database Querying | SQL |
+| Data Visualization | Power BI |
+| Development Environment | Jupyter Notebook |
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- SQL Query Writing
+- Business Intelligence
+- Dashboard Development
+- Data Visualization
+- Customer Behavior Analysis
+- Business Insight Generation
+- KPI Reporting
+
+---
 
 ## Project Workflow
 
 ```
-Raw CSV → Data Cleaning → EDA → SQL Analysis → Power BI Dashboard → Insights & Report
+Raw CSV
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis (EDA)
+   ↓
+SQL Business Analysis
+   ↓
+Power BI Dashboard
+   ↓
+Business Insights
 ```
 
-1. **Data Loading** — imported and inspected the raw CSV, checked types and structure
-2. **EDA** — statistical summaries, trend/pattern identification, correlation analysis
-3. **Data Cleaning** — removed duplicates, handled missing values, standardized formats
-4. **SQL Analysis** — answered business questions using filtering, aggregations, `GROUP BY`/`HAVING`, subqueries, and window functions
-5. **Dashboard Development** — built an interactive Power BI report with KPIs, trends, and filters
-6. **Reporting** — summarized insights into business-relevant recommendations
+1. **Data Loading** – Imported and explored the raw customer shopping dataset.
+2. **Data Cleaning** – Removed duplicates, handled missing values, and standardized the dataset.
+3. **Exploratory Data Analysis** – Performed statistical analysis and visualized customer purchasing patterns.
+4. **SQL Analysis** – Solved real-world business problems using joins, aggregations, window functions, subqueries, and filtering.
+5. **Dashboard Development** – Created an interactive Power BI dashboard to visualize KPIs and trends.
+6. **Business Reporting** – Generated actionable insights from the analysis.
 
-## Sample Business Questions Answered (SQL)
+---
 
-- What is the total revenue generated by male vs. female customers?
-- Which customers used a discount but still spent more than the average purchase amount?
-- What are the top 5 products with the highest average review rating?
-- Do subscribed customers spend more than non-subscribers?
-- What are the top 3 most purchased products within each category?
-- What is the revenue contribution of each age group?
+## Sample Business Questions Answered
+
+- What is the total revenue generated by male and female customers?
+- Which customers spent above the average purchase amount while using discounts?
+- Which product categories generate the highest revenue?
+- Do subscribed customers spend more than non-subscribed customers?
+- What are the top-rated products based on customer reviews?
+- Which age groups contribute the most to overall revenue?
+- How do seasonal trends affect customer purchasing behavior?
+- Which payment methods are most commonly used?
+
+---
 
 ## Repository Structure
 
@@ -80,30 +120,85 @@ Raw CSV → Data Cleaning → EDA → SQL Analysis → Power BI Dashboard → In
 Customer_Behavior_DataAnalysis/
 │
 ├── data/
-│   └── customer_shopping_behavior.csv     # Raw dataset
-├── Power BI Dashboard Screenshots/        # Dashboard visuals
-├── Customer_Behavior.ipynb                # Python EDA & cleaning notebook
-├── Customer_Behavior_SqlQueries.sql       # SQL analysis queries
-├── Customer_Behavior.pbix                 # Power BI dashboard file
-└── README.md
+│   └── customer_shopping_behavior.csv
+├── Customer_Behavior.ipynb
+├── Customer_Behavior_SqlQueries.sql
+├── Customer_Behavior.pbix
+├── README.md
+└── LICENSE
 ```
-
-## How to Run
-
-1. Clone the repository
-   ```
-   git clone https://github.com/SaksharDaksh/Customer_Behavior_DataAnalysis.git
-   ```
-2. Open `Customer_Behavior.ipynb` in Jupyter Notebook to explore the EDA and cleaning steps
-3. Run `Customer_Behavior_SqlQueries.sql` against a MySQL/SQL Server instance loaded with the dataset
-4. Open `Customer_Behavior.pbix` in Power BI Desktop to explore the interactive dashboard
-
-## Limitations & Future Scope
-
-- Single static snapshot of customer data (no time-series tracking)
-- Limited to one retailer's dataset structure — findings may not generalize
-- Future: publish dashboard via Power BI Service for browser-based viewing, add cohort/RFM analysis, expand to multi-year data
 
 ---
 
-*Data Analytics Project | Python, SQL, Power BI*
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SaksharDaksh/Customer_Behavior_DataAnalysis.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Customer_Behavior_DataAnalysis
+```
+
+### 3. Open the Jupyter Notebook
+
+Run:
+
+```
+Customer_Behavior.ipynb
+```
+
+to explore:
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Visualizations
+
+### 4. Execute SQL Queries
+
+Open:
+
+```
+Customer_Behavior_SqlQueries.sql
+```
+
+using your preferred SQL environment (MySQL, SQL Server, or PostgreSQL) after importing the dataset.
+
+### 5. Open the Dashboard
+
+Open:
+
+```
+Customer_Behavior.pbix
+```
+
+using **Microsoft Power BI Desktop** to explore the interactive dashboard.
+
+---
+
+## Future Improvements
+
+- Publish the dashboard using Power BI Service.
+- Perform customer segmentation using RFM analysis.
+- Build customer lifetime value (CLV) models.
+- Add predictive analytics for purchase forecasting.
+- Integrate real-time data sources.
+- Deploy the project as a web-based analytics dashboard.
+
+---
+
+## Author
+
+**Sakshar Daksh**
+
+LinkedIn: https://www.linkedin.com/in/sakshar-daksh/
+
+GitHub: https://github.com/SaksharDaksh
+
+---
+
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
