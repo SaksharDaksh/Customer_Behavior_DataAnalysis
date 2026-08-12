@@ -7,7 +7,7 @@
 An end-to-end data analytics project turning raw customer shopping data into actionable business insights — from data cleaning and SQL querying to an interactive Power BI dashboard.
 
 <!-- 📸 REPLACE THIS with your best dashboard screenshot from the "Power BI Dashboard Screenshots" folder -->
-![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/image1.png)
+![Dashboard Preview](./Power%20BI%20Dashboard%20Screenshots/Image1.png)
 
 ## Overview
 
